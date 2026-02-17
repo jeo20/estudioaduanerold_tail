@@ -1,305 +1,239 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Estudio Aduanero LD | Empresa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<title>Empresa | Estudio Aduanero LD</title>
 
-  <!-- FontAwesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<meta name="description" content="Conocé Estudio Aduanero LD, especialistas en comercio exterior, despacho aduanero, transporte internacional y operaciones marítimas.">
 
-  <!-- CSS propio -->
-  <link rel="stylesheet" href="../css/style.css">
+<meta property="og:title" content="Empresa | Estudio Aduanero LD">
+<meta property="og:image" content="../images/hero-nosotros.jpg">
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#0b1f3a",
-            secondary: "#caa45f"
-          }
-        }
-      }
-    }
-  </script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="../css/style.css">
+
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-slate-50 text-slate-800">
+
 
 <!-- NAVBAR -->
-<nav class="bg-primary fixed w-full z-50 shadow-lg">
+<header class="navbar-premium fixed top-0 w-full z-50">
 
-  <div class="max-w-7xl mx-auto px-6">
+<div class="container-premium">
 
-    <div class="flex justify-between items-center h-16">
+<div class="flex justify-between items-center h-20">
 
-      <a href="../index.html" class="flex items-center space-x-3 text-white font-semibold text-lg">
-        <img src="../images/logo.png" class="h-10">
-        <span>Estudio Aduanero LD</span>
-      </a>
+<a href="../index.html" class="flex items-center gap-3">
 
-      <div class="hidden md:flex space-x-8 text-white font-medium">
+<img src="../images/logo.png" class="h-10">
 
-        <a href="../index.html" class="hover:text-secondary transition">Inicio</a>
+<span class="text-xl font-semibold text-white">
+Estudio Aduanero LD
+</span>
 
-        <a href="servicios.html" class="hover:text-secondary transition">Servicios</a>
+</a>
 
-        <a href="nosotros.html" class="text-secondary">Empresa</a>
+<nav class="hidden md:flex gap-8 text-white font-medium">
 
-        <a href="proyectos.html" class="hover:text-secondary transition">Proyectos</a>
-
-        <a href="contacto.html" class="hover:text-secondary transition">Contacto</a>
-
-      </div>
-
-      <button id="menu-btn" class="md:hidden text-white text-2xl">
-        <i class="fas fa-bars"></i>
-      </button>
-
-    </div>
-
-  </div>
-
-  <div id="mobile-menu" class="hidden md:hidden bg-primary text-white px-6 pb-4 space-y-2">
-
-    <a href="../index.html" class="block hover:text-secondary">Inicio</a>
-
-    <a href="servicios.html" class="block hover:text-secondary">Servicios</a>
-
-    <a href="nosotros.html" class="block text-secondary">Empresa</a>
-
-    <a href="proyectos.html" class="block hover:text-secondary">Proyectos</a>
-
-    <a href="contacto.html" class="block hover:text-secondary">Contacto</a>
-
-  </div>
+<a href="../index.html" class="nav-link">Inicio</a>
+<a href="servicios.html" class="nav-link">Servicios</a>
+<a href="nosotros.html" class="nav-link">Empresa</a>
+<a href="proyectos.html" class="nav-link">Proyectos</a>
+<a href="contacto.html" class="nav-link">Contacto</a>
 
 </nav>
 
+<button id="menu-btn" class="md:hidden text-white text-2xl">
+<i class="fas fa-bars"></i>
+</button>
+
+</div>
+</div>
+</header>
+
 
 <!-- HERO -->
-<section class="pt-32 pb-20 bg-cover bg-center text-white text-center relative"
-style="background-image:url('../images/project3.jpg')">
+<section class="hero-premium"
+style="background-image:url('../images/hero-nosotros.jpg')">
 
-  <div class="absolute inset-0 bg-primary/80"></div>
+<div class="hero-overlay"></div>
 
-  <div class="relative max-w-4xl mx-auto px-6">
+<div class="container-premium relative z-10 text-center">
 
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">
-      Nuestra Empresa
-    </h1>
+<h1 class="hero-title">
+Nuestra Empresa
+</h1>
 
-    <p class="text-xl text-gray-200">
-      Compromiso, experiencia y confiabilidad
-    </p>
+<p class="hero-subtitle">
+Compromiso, experiencia y confiabilidad
+</p>
 
-  </div>
+</div>
 
 </section>
 
 
 <!-- QUIENES SOMOS -->
-<section class="py-16">
+<section class="section-premium">
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<div class="container-premium grid md:grid-cols-2 gap-12 items-center">
 
-    <div>
+<div>
 
-      <h2 class="text-3xl font-bold text-primary mb-6">
-        Quiénes somos
-      </h2>
+<h2 class="section-title text-left">
+Quiénes somos
+</h2>
 
-      <p class="text-gray-600 mb-4">
-        Estudio Aduanero LD es una firma especializada en despacho aduanero,
-        transporte internacional y operaciones marítimas.
-      </p>
+<p class="mb-4">
+Estudio Aduanero LD es una firma especializada en despacho aduanero, transporte internacional y operaciones marítimas.
+</p>
 
-      <p class="text-gray-600">
-        Nuestro equipo está conformado por profesionales con amplia experiencia
-        en comercio exterior y normativa aduanera.
-      </p>
+<p>
+Acompañamos a empresas y particulares brindando asesoramiento integral y soluciones eficientes.
+</p>
 
-    </div>
+</div>
 
-    <div>
+<img src="../images/project3.jpg"
+class="rounded-xl shadow-xl">
 
-      <img src="../images/project3.jpg"
-           class="rounded-xl shadow-lg">
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
 
 <!-- MISION VISION VALORES -->
-<section class="py-16 bg-white">
+<section class="section-alt">
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+<div class="container-premium grid md:grid-cols-3 gap-8">
 
-    <!-- Mision -->
-    <div class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition text-center">
+<div class="card-premium">
 
-      <i class="fas fa-bullseye text-secondary text-4xl mb-4"></i>
+<i class="fas fa-bullseye card-icon"></i>
 
-      <h3 class="text-xl font-semibold mb-3">
-        Misión
-      </h3>
+<h3 class="card-title">
+Misión
+</h3>
 
-      <p class="text-gray-600">
-        Brindar servicios profesionales en comercio exterior,
-        asegurando cumplimiento normativo y eficiencia operativa.
-      </p>
+<p>
+Brindar servicios profesionales en comercio exterior con máxima eficiencia y cumplimiento normativo.
+</p>
 
-    </div>
+</div>
 
-    <!-- Vision -->
-    <div class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition text-center">
 
-      <i class="fas fa-eye text-secondary text-4xl mb-4"></i>
+<div class="card-premium">
 
-      <h3 class="text-xl font-semibold mb-3">
-        Visión
-      </h3>
+<i class="fas fa-eye card-icon"></i>
 
-      <p class="text-gray-600">
-        Ser un referente regional en servicios aduaneros y logísticos.
-      </p>
+<h3 class="card-title">
+Visión
+</h3>
 
-    </div>
+<p>
+Ser un referente regional en servicios aduaneros y logísticos.
+</p>
 
-    <!-- Valores -->
-    <div class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg transition text-center">
+</div>
 
-      <i class="fas fa-handshake text-secondary text-4xl mb-4"></i>
 
-      <h3 class="text-xl font-semibold mb-3">
-        Valores
-      </h3>
+<div class="card-premium">
 
-      <p class="text-gray-600">
-        Ética, compromiso, responsabilidad y transparencia.
-      </p>
+<i class="fas fa-handshake card-icon"></i>
 
-    </div>
+<h3 class="card-title">
+Valores
+</h3>
 
-  </div>
+<p>
+Ética, compromiso, responsabilidad y orientación al cliente.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 
 <!-- FOOTER -->
-<footer class="bg-primary text-white py-12">
+<footer class="footer-premium">
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+<div class="container-premium grid md:grid-cols-3 gap-8">
 
-    <div>
+<div>
 
-      <div class="flex items-center space-x-3 mb-4">
-        <img src="../images/logo.png" class="h-10">
-        <span class="font-semibold text-lg">
-          Estudio Aduanero LD
-        </span>
-      </div>
+<div class="flex items-center gap-3 mb-4">
 
-      <p>Despachante de Aduana</p>
-      <p>Agente de Transporte Aduanero</p>
-      <p>Agente Marítimo</p>
+<img src="../images/logo.png" class="h-8">
 
-    </div>
+<span class="font-semibold">
+Estudio Aduanero LD
+</span>
 
-    <div>
+</div>
 
-      <h4 class="font-semibold mb-4">
-        Contacto
-      </h4>
+<p>Despachante de Aduana</p>
+<p>Agente de Transporte Aduanero</p>
+<p>Agente Marítimo</p>
 
-      <p class="mb-2">
-        <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
-        Río Gallegos, Argentina
-      </p>
+</div>
 
-      <p class="mb-2">
-        <i class="fas fa-phone mr-2 text-secondary"></i>
-        +54 9 2966 460200
-      </p>
 
-      <p>
-        <i class="fas fa-envelope mr-2 text-secondary"></i>
-        info@estudioaduanerold.com.ar
-      </p>
+<div>
 
-    </div>
+<h4 class="footer-title">Contacto</h4>
 
-    <div>
+<p>Paseo de los Arrieros 3068</p>
+<p>+54 9 2966 460200</p>
+<p>ldriezler@estudioaduanerold.com.ar</p>
 
-      <h4 class="font-semibold mb-4">
-        Enlaces
-      </h4>
+</div>
 
-      <div class="space-y-2">
 
-        <a href="../index.html" class="block hover:text-secondary">
-          Inicio
-        </a>
+<div>
 
-        <a href="servicios.html" class="block hover:text-secondary">
-          Servicios
-        </a>
+<h4 class="footer-title">Enlaces</h4>
 
-        <a href="nosotros.html" class="block text-secondary">
-          Empresa
-        </a>
+<div class="flex flex-col gap-2">
 
-        <a href="contacto.html" class="block hover:text-secondary">
-          Contacto
-        </a>
+<a href="../index.html">Inicio</a>
+<a href="servicios.html">Servicios</a>
+<a href="nosotros.html">Empresa</a>
+<a href="proyectos.html">Proyectos</a>
+<a href="contacto.html">Contacto</a>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
-  <div class="text-center mt-8 text-gray-400">
-
-    © 2026 Estudio Aduanero LD
-
-  </div>
+<div class="footer-bottom">
+© 2026 Estudio Aduanero LD
+</div>
 
 </footer>
 
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/5492966460200"
-class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition">
+class="whatsapp-btn"
+target="_blank">
 
 <i class="fab fa-whatsapp"></i>
 
 </a>
 
 
-<!-- JS -->
 <script src="../js/script.js"></script>
-
-<script>
-
-document.getElementById('menu-btn')
-.addEventListener('click', function(){
-
-document.getElementById('mobile-menu')
-.classList.toggle('hidden')
-
-})
-
-</script>
-
 
 </body>
 </html>

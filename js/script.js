@@ -1,109 +1,118 @@
-// =========================
-// Inicialización AOS
-// =========================
-AOS.init({
-  duration: 1000,
-  once: true,
-  easing: "ease-out-cubic",
-});
+/* ===============================
+   ESTUDIO ADUANERO LD
+   Script principal
+================================ */
 
-// =========================
-// GSAP - Animaciones iniciales
-// =========================
-gsap.from(".navbar", {
-  y: -80,
-  opacity: 0,
-  duration: 1,
-  ease: "power3.out",
-});
 
-gsap.from(".hero h1, .page-header h1", {
-  y: 40,
-  opacity: 0,
-  duration: 1,
-  delay: 0.4,
-  ease: "power3.out",
-});
+/* ===============================
+   LOAD COMPONENTS
+================================ */
 
-gsap.from(".hero p, .page-header p", {
-  y: 30,
-  opacity: 0,
-  duration: 1,
-  delay: 0.7,
-  ease: "power3.out",
-});
+async function loadComponent(id, file)
+{
+    try
+    {
+        const response = await fetch(file);
 
-gsap.from(".hero .btn, .page-header .btn", {
-  y: 20,
-  opacity: 0,
-  duration: 1,
-  delay: 1,
-  ease: "power3.out",
-});
+        if (!response.ok)
+        {
+            throw new Error(`Error cargando ${file}`);
+        }
 
-// =========================
-// GSAP - Animaciones al hacer scroll
-// =========================
-gsap.utils.toArray("section").forEach((section) => {
-  gsap.from(section, {
-    scrollTrigger: {
-      trigger: section,
-      start: "top 85%",
-    },
-    y: 60,
-    opacity: 0,
-    duration: 1,
-    ease: "power3.out",
-  });
-});
+        const html = await response.text();
 
-// =========================
-// EmailJS - Envío de formulario
-// =========================
-(function () {
-  emailjs.init("xVwdbB46eyW5LrqW4"); // Reemplazá con tu Public Key real
-})();
-
-const contactForm = document.getElementById("contact-form");
-const formStatus = document.getElementById("form-status");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    formStatus.innerHTML = "<span class='text-info'>Enviando mensaje...</span>";
-
-    emailjs.sendForm("service_lpndc49", "template_qj19ozw", this).then(
-      function () {
-        formStatus.innerHTML =
-          "<span class='text-success'>Mensaje enviado correctamente. Nos contactaremos a la brevedad.</span>";
-        contactForm.reset();
-      },
-      function (error) {
-        console.error("EmailJS error:", error);
-        formStatus.innerHTML =
-          "<span class='text-danger'>Error al enviar el mensaje. Intente nuevamente.</span>";
-      }
-    );
-  });
+        document.getElementById(id).innerHTML = html;
+    }
+    catch (error)
+    {
+        console.error(error);
+    }
 }
 
-// =========================
-// Efecto hover GSAP en cards
-// =========================
-gsap.utils.toArray(".card").forEach((card) => {
-  card.addEventListener("mouseenter", () => {
-    gsap.to(card, {
-      scale: 1.03,
-      duration: 0.3,
-      ease: "power2.out",
-    });
-  });
 
-  card.addEventListener("mouseleave", () => {
-    gsap.to(card, {
-      scale: 1,
-      duration: 0.3,
-      ease: "power2.out",
+
+/* ===============================
+   LOAD NAVBAR + FOOTER
+================================ */
+
+document.addEventListener("DOMContentLoaded", async () =>
+{
+    await loadComponent("navbar", "/components/navbar.html");
+    await loadComponent("footer", "/components/footer.html");
+
+    initMobileMenu();
+    initNavbarScroll();
+});
+
+
+
+/* ===============================
+   MOBILE MENU
+================================ */
+
+function initMobileMenu()
+{
+    const btn = document.getElementById("menu-btn");
+
+    if (!btn) return;
+
+    btn.addEventListener("click", () =>
+    {
+        const menu = document.getElementById("mobile-menu");
+
+        if (!menu) return;
+
+        menu.classList.toggle("hidden");
     });
-  });
+}
+
+
+
+/* ===============================
+   NAVBAR SCROLL EFFECT
+================================ */
+
+function initNavbarScroll()
+{
+    const navbar = document.querySelector(".navbar-premium");
+
+    if (!navbar) return;
+
+    window.addEventListener("scroll", () =>
+    {
+        if (window.scrollY > 50)
+        {
+            navbar.classList.add("navbar-scrolled");
+        }
+        else
+        {
+            navbar.classList.remove("navbar-scrolled");
+        }
+    });
+}
+
+
+
+/* ===============================
+   FADE IN ANIMATION ON SCROLL
+================================ */
+
+const observer = new IntersectionObserver((entries) =>
+{
+    entries.forEach(entry =>
+    {
+        if (entry.isIntersecting)
+        {
+            entry.target.classList.add("animate-fade-in");
+        }
+    });
+
+}, { threshold: 0.1 });
+
+
+
+document.querySelectorAll(".card-premium, .section-title")
+.forEach(el =>
+{
+    observer.observe(el);
 });

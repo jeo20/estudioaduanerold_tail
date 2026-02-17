@@ -1,275 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Servicios de comercio exterior, despacho aduanero y transporte internacional.">
-
 <title>Servicios | Estudio Aduanero LD</title>
 
+<meta name="description" content="Servicios de despacho aduanero, agente marítimo y transporte aduanero en Argentina.">
+<meta name="keywords" content="despacho aduanero, agente marítimo, transporte aduanero argentina">
 
-<!-- Tailwind -->
+<meta property="og:title" content="Servicios | Estudio Aduanero LD">
+<meta property="og:image" content="../images/hero-servicios.jpg">
+
 <script src="https://cdn.tailwindcss.com"></script>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- FontAwesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-<!-- GSAP -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
-
-
-<!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-
-
-<!-- Script propio -->
-<script src="../js/script.js" defer></script>
-
+<link rel="stylesheet" href="../css/style.css">
 
 </head>
 
+<body class="bg-slate-50 text-slate-800">
 
 
-<body class="bg-gray-100 text-gray-800">
+<!-- NAVBAR (idéntico a index) -->
+<header class="navbar-premium fixed top-0 w-full z-50">
 
+<div class="container-premium">
 
-<!-- NAVBAR -->
-
-<nav class="fixed w-full bg-black text-white shadow-lg z-50">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="flex justify-between items-center h-16">
-
+<div class="flex justify-between items-center h-20">
 
 <a href="../index.html" class="flex items-center gap-3">
 
 <img src="../images/logo.png" class="h-10">
 
-<span class="font-semibold text-lg">
-
+<span class="text-xl font-semibold text-white">
 Estudio Aduanero LD
-
 </span>
 
 </a>
 
+<nav class="hidden md:flex gap-8 text-white font-medium">
 
-<div class="hidden md:flex gap-8 font-medium">
-
-<a href="../index.html" class="hover:text-red-600 transition">
-
-Inicio
-
-</a>
-
-<a href="servicios.html" class="text-red-600">
-
-Servicios
-
-</a>
-
-<a href="nosotros.html" class="hover:text-red-600 transition">
-
-Empresa
-
-</a>
-
-<a href="proyectos.html" class="hover:text-red-600 transition">
-
-Proyectos
-
-</a>
-
-<a href="contacto.html" class="hover:text-red-600 transition">
-
-Contacto
-
-</a>
-
-</div>
-
-
-<button id="menu-btn" class="md:hidden text-2xl">
-
-<i class="fas fa-bars"></i>
-
-</button>
-
-
-</div>
-
-</div>
-
-
-<!-- Mobile menu -->
-
-<div id="mobile-menu" class="hidden bg-black px-6 pb-4">
-
-<div class="flex flex-col gap-3">
-
-<a href="../index.html">Inicio</a>
-
-<a href="servicios.html">Servicios</a>
-
-<a href="nosotros.html">Empresa</a>
-
-<a href="proyectos.html">Proyectos</a>
-
-<a href="contacto.html">Contacto</a>
-
-</div>
-
-</div>
+<a href="../index.html" class="nav-link">Inicio</a>
+<a href="servicios.html" class="nav-link">Servicios</a>
+<a href="nosotros.html" class="nav-link">Empresa</a>
+<a href="proyectos.html" class="nav-link">Proyectos</a>
+<a href="contacto.html" class="nav-link">Contacto</a>
 
 </nav>
 
+<button id="menu-btn" class="md:hidden text-white text-2xl">
+<i class="fas fa-bars"></i>
+</button>
+
+</div>
+</div>
+</header>
 
 
-<!-- HERO -->
+<!-- HERO ORIGINAL -->
+<section class="hero-premium"
+style="background-image:url('../images/hero-servicios.jpg')">
 
-<section
-class="pt-32 pb-20 text-center text-white relative"
-style="background-image:url('../images/hero-servicios.jpg'); background-size:cover; background-position:center;">
+<div class="hero-overlay"></div>
 
-<div class="absolute inset-0 bg-black opacity-70"></div>
+<div class="container-premium relative z-10 text-center">
 
-
-<div class="relative z-10 max-w-3xl mx-auto px-6" data-aos="fade-up">
-
-
-<h1 class="text-4xl md:text-5xl font-bold mb-4">
-
-Especialistas en despachos aduaneros y transporte internacional
-
+<h1 class="hero-title">
+Nuestros Servicios
 </h1>
 
-
-<p class="mb-3">
-
-Despachante de Aduana · Agente de Transporte Aduanero · Agente Marítimo
-
+<p class="hero-subtitle">
+Soluciones profesionales en comercio exterior
 </p>
-
-
-<p class="mb-6">
-
-Soluciones profesionales, eficientes y seguras
-
-</p>
-
-
-<a href="contacto.html"
-class="bg-red-700 hover:bg-red-800 px-8 py-3 rounded-lg font-semibold transition">
-
-Solicitar asesoramiento
-
-</a>
-
 
 </div>
 
 </section>
 
 
+<!-- CONTENIDO ORIGINAL -->
+<section class="section-premium">
 
-<!-- SERVICIOS -->
+<div class="container-premium grid md:grid-cols-3 gap-8">
 
-<section class="py-20">
+<div class="card-premium">
 
+<i class="fas fa-file-contract card-icon"></i>
 
-<div class="max-w-7xl mx-auto px-6">
-
-
-<h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
-
-Nuestros Servicios
-
-</h2>
-
-
-
-<div class="grid md:grid-cols-3 gap-8">
-
-
-
-<!-- Servicio 1 -->
-
-<div class="bg-white p-8 rounded-lg shadow hover:shadow-xl transition text-center"
-data-aos="fade-up">
-
-<i class="fas fa-file-contract text-red-700 text-4xl mb-4"></i>
-
-<h3 class="font-semibold text-xl mb-3">
-
+<h3 class="card-title">
 Despacho de Aduana
-
 </h3>
 
-<p class="text-gray-600">
-
-Gestión integral de importaciones y exportaciones, garantizando cumplimiento normativo y liberación eficiente de mercadería.
-
+<p>
+Gestión integral de importaciones y exportaciones, cumplimiento normativo y liberación eficiente.
 </p>
 
 </div>
 
 
+<div class="card-premium">
 
-<!-- Servicio 2 -->
+<i class="fas fa-truck-moving card-icon"></i>
 
-<div class="bg-white p-8 rounded-lg shadow hover:shadow-xl transition text-center"
-data-aos="fade-up" data-aos-delay="100">
-
-<i class="fas fa-truck-moving text-red-700 text-4xl mb-4"></i>
-
-<h3 class="font-semibold text-xl mb-3">
-
+<h3 class="card-title">
 Agente de Transporte Aduanero
-
 </h3>
 
-<p class="text-gray-600">
-
-Coordinación y control del transporte de cargas bajo régimen aduanero, asegurando trazabilidad y seguridad.
-
+<p>
+Coordinación y control del transporte de cargas bajo régimen aduanero.
 </p>
 
 </div>
 
 
+<div class="card-premium">
 
-<!-- Servicio 3 -->
+<i class="fas fa-ship card-icon"></i>
 
-<div class="bg-white p-8 rounded-lg shadow hover:shadow-xl transition text-center"
-data-aos="fade-up" data-aos-delay="200">
-
-<i class="fas fa-ship text-red-700 text-4xl mb-4"></i>
-
-<h3 class="font-semibold text-xl mb-3">
-
+<h3 class="card-title">
 Agente Marítimo
-
 </h3>
 
-<p class="text-gray-600">
-
-Representación y gestión de operaciones marítimas, incluyendo atención a buques, cargas y trámites portuarios.
-
+<p>
+Representación y gestión de operaciones marítimas y portuarias.
 </p>
-
-</div>
-
 
 </div>
 
@@ -279,85 +137,22 @@ Representación y gestión de operaciones marítimas, incluyendo atención a buq
 
 
 
-<!-- BLOQUE EMPRESA -->
+<!-- FOOTER (idéntico a index) -->
+<footer class="footer-premium">
 
-<section class="bg-gray-50 py-20">
-
-
-<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-
-<div data-aos="fade-right">
-
-
-<h2 class="text-3xl font-bold mb-4">
-
-Compromiso, experiencia y confiabilidad
-
-</h2>
-
-
-<p class="mb-4">
-
-Brindamos un servicio integral en comercio exterior respaldado por experiencia profesional, conocimiento normativo y atención personalizada.
-
-</p>
-
-
-<p class="mb-6">
-
-Acompañamos cada operación desde su inicio hasta su finalización, cuidando los intereses de nuestros clientes.
-
-</p>
-
-
-<a href="nosotros.html"
-class="bg-red-700 hover:bg-red-800 text-white px-6 py-3 rounded-lg">
-
-Conocer la empresa
-
-</a>
-
-
-</div>
-
-
-<div data-aos="fade-left">
-
-<img src="../images/hero-servicios.jpg"
-class="rounded-lg shadow-lg">
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer class="bg-black text-white py-12">
-
-
-<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-
+<div class="container-premium grid md:grid-cols-3 gap-8">
 
 <div>
 
 <div class="flex items-center gap-3 mb-4">
 
-<img src="../images/logo.png" class="h-10">
+<img src="../images/logo.png" class="h-8">
 
 <span class="font-semibold">
-
 Estudio Aduanero LD
-
 </span>
 
 </div>
-
 
 <p>Despachante de Aduana</p>
 <p>Agente de Transporte Aduanero</p>
@@ -368,17 +163,12 @@ Estudio Aduanero LD
 
 <div>
 
-<h3 class="font-semibold mb-4">
-
+<h4 class="footer-title">
 Contacto
+</h4>
 
-</h3>
-
-
-<p>Río Gallegos, Argentina</p>
-
+<p>Paseo de los Arrieros 3068, Río Gallegos</p>
 <p>+54 9 2966 460200</p>
-
 <p>ldriezler@estudioaduanerold.com.ar</p>
 
 </div>
@@ -386,60 +176,42 @@ Contacto
 
 <div>
 
-<h3 class="font-semibold mb-4">
-
+<h4 class="footer-title">
 Enlaces
-
-</h3>
-
+</h4>
 
 <div class="flex flex-col gap-2">
 
 <a href="../index.html">Inicio</a>
-
 <a href="servicios.html">Servicios</a>
-
 <a href="nosotros.html">Empresa</a>
-
+<a href="proyectos.html">Proyectos</a>
 <a href="contacto.html">Contacto</a>
 
 </div>
 
 </div>
 
+</div>
 
+
+<div class="footer-bottom">
+© 2026 Estudio Aduanero LD
 </div>
 
 </footer>
 
 
+<a href="https://wa.me/5492966460200"
+class="whatsapp-btn"
+target="_blank">
 
-<!-- WhatsApp -->
-
-<a href="https://wa.me/549XXXXXXXXXX"
-class="fixed bottom-5 right-5 bg-green-500 text-white w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-110 transition">
-
-<i class="fab fa-whatsapp text-2xl"></i>
+<i class="fab fa-whatsapp"></i>
 
 </a>
 
 
-
-<!-- Scripts -->
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-AOS.init()
-
-const btn = document.getElementById("menu-btn")
-const menu = document.getElementById("mobile-menu")
-
-btn.addEventListener("click", () => {
-menu.classList.toggle("hidden")
-})
-</script>
-
+<script src="../js/script.js"></script>
 
 </body>
 </html>

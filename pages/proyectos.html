@@ -1,129 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Estudio Aduanero LD | Proyectos</title>
+<title>Proyectos | Estudio Aduanero LD</title>
 
-<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- FontAwesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- CSS propio -->
 <link rel="stylesheet" href="../css/style.css">
-
-<script>
-tailwind.config = {
-theme: {
-extend: {
-colors: {
-primary: "#0b1f3a",
-secondary: "#caa45f"
-}
-}
-}
-}
-</script>
 
 </head>
 
+<body class="bg-slate-50 text-slate-800">
 
-<body class="bg-gray-50">
+<header class="navbar-premium fixed top-0 w-full z-50">
+<div class="container-premium">
+<div class="flex justify-between items-center h-20">
 
-
-<!-- NAVBAR -->
-<nav class="bg-primary fixed w-full z-50 shadow-lg">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="flex justify-between items-center h-16">
-
-<a href="../index.html" class="flex items-center space-x-3 text-white font-semibold text-lg">
+<a href="../index.html" class="flex items-center gap-3">
 <img src="../images/logo.png" class="h-10">
-<span>Estudio Aduanero LD</span>
+<span class="text-xl font-semibold text-white">Estudio Aduanero LD</span>
 </a>
 
-<div class="hidden md:flex space-x-8 text-white font-medium">
-
-<a href="../index.html" class="hover:text-secondary transition">
-Inicio
-</a>
-
-<a href="servicios.html" class="hover:text-secondary transition">
-Servicios
-</a>
-
-<a href="nosotros.html" class="hover:text-secondary transition">
-Empresa
-</a>
-
-<a href="proyectos.html" class="text-secondary">
-Proyectos
-</a>
-
-<a href="contacto.html" class="hover:text-secondary transition">
-Contacto
-</a>
-
-</div>
-
-
-<button id="menu-btn" class="md:hidden text-white text-2xl">
-<i class="fas fa-bars"></i>
-</button>
-
-</div>
-
-</div>
-
-
-<div id="mobile-menu" class="hidden md:hidden bg-primary text-white px-6 pb-4 space-y-2">
-
-<a href="../index.html" class="block hover:text-secondary">
-Inicio
-</a>
-
-<a href="servicios.html" class="block hover:text-secondary">
-Servicios
-</a>
-
-<a href="nosotros.html" class="block hover:text-secondary">
-Empresa
-</a>
-
-<a href="proyectos.html" class="block text-secondary">
-Proyectos
-</a>
-
-<a href="contacto.html" class="block hover:text-secondary">
-Contacto
-</a>
-
-</div>
-
+<nav class="hidden md:flex gap-8 text-white font-medium">
+<a href="../index.html" class="nav-link">Inicio</a>
+<a href="servicios.html" class="nav-link">Servicios</a>
+<a href="nosotros.html" class="nav-link">Empresa</a>
+<a href="proyectos.html" class="nav-link">Proyectos</a>
+<a href="contacto.html" class="nav-link">Contacto</a>
 </nav>
 
+</div>
+</div>
+</header>
 
 
-<!-- HERO -->
-<section class="pt-32 pb-20 bg-cover bg-center text-white text-center relative"
-style="background-image:url('../images/project1.jpg')">
+<section class="hero-premium"
+style="background-image:url('../images/hero-proyectos.jpg')">
 
-<div class="absolute inset-0 bg-primary/80"></div>
+<div class="hero-overlay"></div>
 
-<div class="relative max-w-4xl mx-auto px-6">
+<div class="container-premium relative z-10 text-center">
 
-<h1 class="text-4xl md:text-5xl font-bold mb-4">
-Proyectos y Operaciones
+<h1 class="hero-title">
+Proyectos
 </h1>
 
-<p class="text-xl text-gray-200">
-Casos destacados en comercio exterior y logística internacional
+<p class="hero-subtitle">
+Operaciones destacadas en comercio exterior
 </p>
 
 </div>
@@ -131,84 +60,26 @@ Casos destacados en comercio exterior y logística internacional
 </section>
 
 
+<section class="section-premium">
 
-<!-- GALERIA -->
-<section class="py-16">
+<div class="container-premium grid md:grid-cols-3 gap-8">
 
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-
-<!-- Proyecto 1 -->
-<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-
-<img src="../images/project1.jpg"
-class="w-full h-60 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-xl font-semibold mb-3 text-primary">
-Operación de Importación Industrial
-</h3>
-
-<p class="text-gray-600">
-Gestión integral de importación de maquinaria,
-incluyendo despacho, transporte y liberación aduanera.
-</p>
-
+<div class="card-premium">
+<img src="../images/project1.jpg" class="rounded-lg mb-4">
+<h3 class="card-title">Importación Industrial</h3>
+<p>Gestión integral de maquinaria industrial.</p>
 </div>
 
+<div class="card-premium">
+<img src="../images/project2.jpg" class="rounded-lg mb-4">
+<h3 class="card-title">Exportación Regional</h3>
+<p>Exportación de productos regionales.</p>
 </div>
 
-
-
-<!-- Proyecto 2 -->
-<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-
-<img src="../images/project2.jpg"
-class="w-full h-60 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-xl font-semibold mb-3 text-primary">
-Exportación de Productos Regionales
-</h3>
-
-<p class="text-gray-600">
-Coordinación de exportaciones, documentación
-y logística internacional.
-</p>
-
-</div>
-
-</div>
-
-
-
-<!-- Proyecto 3 -->
-<div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden">
-
-<img src="../images/project3.jpg"
-class="w-full h-60 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-xl font-semibold mb-3 text-primary">
-Operaciones Marítimas
-</h3>
-
-<p class="text-gray-600">
-Gestión de arribos, cargas, descargas
-y coordinación portuaria.
-</p>
-
-</div>
-
-</div>
-
-
-
+<div class="card-premium">
+<img src="../images/project3.jpg" class="rounded-lg mb-4">
+<h3 class="card-title">Operaciones Marítimas</h3>
+<p>Coordinación portuaria completa.</p>
 </div>
 
 </div>
@@ -216,125 +87,20 @@ y coordinación portuaria.
 </section>
 
 
-
-<!-- FOOTER -->
-<footer class="bg-primary text-white py-12">
-
-<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-
-
+<footer class="footer-premium">
+<div class="container-premium grid md:grid-cols-3 gap-8">
 <div>
-
-<div class="flex items-center space-x-3 mb-4">
-<img src="../images/logo.png" class="h-10">
-<span class="font-semibold text-lg">
-Estudio Aduanero LD
-</span>
-</div>
-
+<img src="../images/logo.png" class="h-8 mb-3">
 <p>Despachante de Aduana</p>
-<p>Agente de Transporte Aduanero</p>
 <p>Agente Marítimo</p>
-
 </div>
-
-
-
-<div>
-
-<h4 class="font-semibold mb-4">
-Contacto
-</h4>
-
-<p class="mb-2">
-<i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
-Río Gallegos, Argentina
-</p>
-
-<p class="mb-2">
-<i class="fas fa-phone mr-2 text-secondary"></i>
-+54 9 2966 460200
-</p>
-
-<p>
-<i class="fas fa-envelope mr-2 text-secondary"></i>
-info@estudioaduanerold.com.ar
-</p>
-
 </div>
-
-
-
-<div>
-
-<h4 class="font-semibold mb-4">
-Enlaces
-</h4>
-
-<div class="space-y-2">
-
-<a href="../index.html" class="block hover:text-secondary">
-Inicio
-</a>
-
-<a href="servicios.html" class="block hover:text-secondary">
-Servicios
-</a>
-
-<a href="nosotros.html" class="block hover:text-secondary">
-Empresa
-</a>
-
-<a href="proyectos.html" class="block text-secondary">
-Proyectos
-</a>
-
-<a href="contacto.html" class="block hover:text-secondary">
-Contacto
-</a>
-
-</div>
-
-</div>
-
-
-</div>
-
-
-<div class="text-center mt-8 text-gray-400">
+<div class="footer-bottom">
 © 2026 Estudio Aduanero LD
 </div>
-
-
 </footer>
 
-
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/5492966460200"
-class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:scale-110 transition">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-
-
-<!-- JS -->
 <script src="../js/script.js"></script>
-
-<script>
-
-document.getElementById('menu-btn')
-.addEventListener('click', function(){
-
-document.getElementById('mobile-menu')
-.classList.toggle('hidden')
-
-})
-
-</script>
-
 
 </body>
 </html>

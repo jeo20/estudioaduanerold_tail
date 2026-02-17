@@ -1,142 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Página no encontrada — Estudio Aduanero LD" />
-  <meta name="robots" content="noindex" />
 
-  <title>Error 404 | Estudio Aduanero LD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
+<title>Error 404 | Página no encontrada | Estudio Aduanero LD</title>
 
-  <style>
-    .hero-404 {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #000000 0%, #1a1a1a 60%, #b11217 100%);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
+<meta name="description" content="La página que buscas no existe. Estudio Aduanero LD — Servicios profesionales en comercio exterior.">
 
-    .hero-404 .container {
-      position: relative;
-      z-index: 2;
-    }
+<meta name="robots" content="noindex, follow">
 
-    .error-number {
-      font-size: 7rem;
-      font-weight: 800;
-      color: #ffffff;
-      letter-spacing: 5px;
-    }
+<!-- OpenGraph -->
+<meta property="og:title" content="Error 404 | Estudio Aduanero LD">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/images/hero-home.jpg">
 
-    .error-number span {
-      color: #b11217;
-    }
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-    .ship-icon {
-      font-size: 4rem;
-      color: #b11217;
-      margin-bottom: 20px;
-    }
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    .background-circle {
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 50%;
-      top: -150px;
-      right: -150px;
-      z-index: 1;
-    }
-  </style>
+<!-- CSS -->
+<link rel="stylesheet" href="/css/style.css">
+
 </head>
-<body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="/images/logo.png" alt="Estudio Aduanero LD" /> Estudio Aduanero LD
-      </a>
-    </div>
-  </nav>
 
-  <!-- HERO 404 -->
-  <section class="hero-404">
-    <div class="background-circle"></div>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
-    <div class="container">
-      <div class="ship-icon">
-        <i class="fas fa-ship"></i>
-      </div>
 
-      <div class="error-number">
-        4<span>0</span>4
-      </div>
+<!-- NAVBAR -->
+<header class="navbar-premium fixed top-0 w-full z-50">
 
-      <h2 class="mb-3">Ruta no encontrada</h2>
-      <p class="mb-4">
-        El destino que intentás alcanzar no existe o fue movido.<br>
-        Podemos ayudarte a encontrar el camino correcto.
-      </p>
+<div class="container-premium">
 
-      <div class="d-flex justify-content-center gap-3 flex-wrap">
-        <a href="index.html" class="btn btn-primary btn-lg">
-          <i class="fas fa-home me-2"></i>Volver al inicio
-        </a>
-      </div>
-    </div>
-  </section>
+<div class="flex justify-between items-center h-20">
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-bottom text-center">
-        <p>© 2026 Estudio Aduanero LD. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
+<a href="/index.html" class="flex items-center gap-3">
 
-  <!-- WHATSAPP -->
-  <a href="https://wa.me/549XXXXXXXXXX" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+<img src="/images/logo.png" class="h-10">
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<span class="text-xl font-semibold text-white">
+Estudio Aduanero LD
+</span>
 
-  <script>
-    gsap.from(".ship-icon", {
-      y: -50,
-      opacity: 0,
-      duration: 1
-    });
+</a>
 
-    gsap.from(".error-number", {
-      scale: 0.6,
-      opacity: 0,
-      duration: 1,
-      delay: 0.3,
-      ease: "back.out(1.7)"
-    });
+<nav class="hidden md:flex gap-8 text-white font-medium">
 
-    gsap.from("h2, p, .btn", {
-      y: 30,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      delay: 0.8
-    });
-  </script>
+<a href="/index.html" class="nav-link">Inicio</a>
+<a href="/pages/servicios.html" class="nav-link">Servicios</a>
+<a href="/pages/nosotros.html" class="nav-link">Empresa</a>
+<a href="/pages/proyectos.html" class="nav-link">Proyectos</a>
+<a href="/pages/contacto.html" class="nav-link">Contacto</a>
+
+</nav>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- CONTENIDO -->
+<main class="flex-grow flex items-center justify-center">
+
+<section class="pt-32 pb-20">
+
+<div class="container-premium text-center">
+
+
+<!-- ICON -->
+<div class="text-sky-500 text-7xl mb-6 animate-fade-in">
+
+<i class="fas fa-anchor"></i>
+
+</div>
+
+
+<!-- ERROR -->
+<h1 class="text-6xl md:text-7xl font-bold text-slate-800 mb-4">
+
+404
+
+</h1>
+
+
+<h2 class="text-2xl font-semibold mb-4">
+
+Página no encontrada
+
+</h2>
+
+
+<p class="text-slate-600 mb-8 max-w-xl mx-auto">
+
+La página que intentas acceder no existe o fue movida.
+Puedes volver al inicio o acceder a nuestras secciones principales.
+
+</p>
+
+
+<!-- BUTTONS -->
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+
+
+<a href="/index.html"
+class="btn-premium">
+
+Volver al inicio
+
+</a>
+
+
+<a href="/pages/contacto.html"
+class="btn-premium">
+
+Contactar soporte
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer-premium">
+
+<div class="container-premium grid md:grid-cols-3 gap-8">
+
+<div>
+
+<div class="flex items-center gap-3 mb-4">
+
+<img src="/images/logo.png" class="h-8">
+
+<span class="font-semibold">
+
+Estudio Aduanero LD
+
+</span>
+
+</div>
+
+<p>Despachante de Aduana</p>
+<p>Agente de Transporte Aduanero</p>
+<p>Agente Marítimo</p>
+
+</div>
+
+
+<div>
+
+<h4 class="footer-title">
+
+Contacto
+
+</h4>
+
+<p>Paseo de los Arrieros 3068</p>
+<p>+54 9 2966 460200</p>
+<p>ldriezler@estudioaduanerold.com.ar</p>
+
+</div>
+
+
+<div>
+
+<h4 class="footer-title">
+
+Enlaces
+
+</h4>
+
+<div class="flex flex-col gap-2">
+
+<a href="/index.html">Inicio</a>
+<a href="/pages/servicios.html">Servicios</a>
+<a href="/pages/nosotros.html">Empresa</a>
+<a href="/pages/proyectos.html">Proyectos</a>
+<a href="/pages/contacto.html">Contacto</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Estudio Aduanero LD. Todos los derechos reservados.
+
+</div>
+
+</footer>
+
+
+<!-- WhatsApp -->
+<a href="https://wa.me/5492966460200"
+class="whatsapp-btn"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<!-- JS -->
+<script src="/js/script.js"></script>
+
 
 </body>
 </html>

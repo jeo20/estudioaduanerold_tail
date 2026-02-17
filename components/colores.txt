@@ -1,0 +1,6 @@
+| Uso        | Color              | Tailwind |
+| ---------- | ------------------ | -------- |
+| Primario   | Azul corporativo   | #0b1f3a  |
+| Secundario | Dorado corporativo | #caa45f  |
+| Fondo      | Gris claro         | #f9fafb  |
+| Texto      | Gris oscuro        | #1f2937  |
