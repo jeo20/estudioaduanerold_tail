@@ -32,44 +32,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
 
-<!-- NAVBAR -->
-<header class="navbar-premium fixed top-0 w-full z-50">
-
-<div class="container-premium">
-
-<div class="flex justify-between items-center h-20">
-
-<a href="/index.html" class="flex items-center gap-3">
-
-<img src="/images/logo.png" class="h-10">
-
-<span class="text-xl font-semibold text-white">
-Estudio Aduanero LD
-</span>
-
-</a>
-
-<nav class="hidden md:flex gap-8 text-white font-medium">
-
-<a href="/index.html" class="nav-link">Inicio</a>
-<a href="/pages/servicios.html" class="nav-link">Servicios</a>
-<a href="/pages/nosotros.html" class="nav-link">Empresa</a>
-<a href="/pages/proyectos.html" class="nav-link">Proyectos</a>
-<a href="/pages/contacto.html" class="nav-link">Contacto</a>
-
-</nav>
-
-</div>
-
-</div>
-
-</header>
+<!-- NAVBAR COMPONENT -->
+<div id="navbar"></div>
 
 
 <!-- CONTENIDO -->
 <main class="flex-grow flex items-center justify-center">
 
-<section class="pt-32 pb-20">
+<section class="pt-32 pb-20 w-full">
 
 <div class="container-premium text-center">
 
@@ -99,8 +69,8 @@ Página no encontrada
 
 <p class="text-slate-600 mb-8 max-w-xl mx-auto">
 
-La página que intentas acceder no existe o fue movida.
-Puedes volver al inicio o acceder a nuestras secciones principales.
+La página que intentas acceder no existe, fue movida o eliminada.
+Puedes volver al inicio o contactarnos.
 
 </p>
 
@@ -135,77 +105,8 @@ Contactar soporte
 </main>
 
 
-<!-- FOOTER -->
-<footer class="footer-premium">
-
-<div class="container-premium grid md:grid-cols-3 gap-8">
-
-<div>
-
-<div class="flex items-center gap-3 mb-4">
-
-<img src="/images/logo.png" class="h-8">
-
-<span class="font-semibold">
-
-Estudio Aduanero LD
-
-</span>
-
-</div>
-
-<p>Despachante de Aduana</p>
-<p>Agente de Transporte Aduanero</p>
-<p>Agente Marítimo</p>
-
-</div>
-
-
-<div>
-
-<h4 class="footer-title">
-
-Contacto
-
-</h4>
-
-<p>Paseo de los Arrieros 3068</p>
-<p>+54 9 2966 460200</p>
-<p>ldriezler@estudioaduanerold.com.ar</p>
-
-</div>
-
-
-<div>
-
-<h4 class="footer-title">
-
-Enlaces
-
-</h4>
-
-<div class="flex flex-col gap-2">
-
-<a href="/index.html">Inicio</a>
-<a href="/pages/servicios.html">Servicios</a>
-<a href="/pages/nosotros.html">Empresa</a>
-<a href="/pages/proyectos.html">Proyectos</a>
-<a href="/pages/contacto.html">Contacto</a>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="footer-bottom">
-
-© 2026 Estudio Aduanero LD. Todos los derechos reservados.
-
-</div>
-
-</footer>
+<!-- FOOTER COMPONENT -->
+<div id="footer"></div>
 
 
 <!-- WhatsApp -->

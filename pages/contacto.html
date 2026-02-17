@@ -7,8 +7,15 @@
 
 <title>Contacto | Estudio Aduanero LD</title>
 
+<meta name="description" content="Contactá a Estudio Aduanero LD para asesoramiento en despacho aduanero, transporte internacional y operaciones marítimas.">
+
+<meta property="og:title" content="Contacto | Estudio Aduanero LD">
+<meta property="og:image" content="../images/hero-contacto.jpg">
+
+<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- CSS -->
 <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -16,19 +23,11 @@
 <body class="bg-slate-50 text-slate-800">
 
 
-<header class="navbar-premium fixed top-0 w-full z-50">
-<div class="container-premium">
-<div class="flex justify-between items-center h-20">
-
-<a href="../index.html">
-<img src="../images/logo.png" class="h-10">
-</a>
-
-</div>
-</div>
-</header>
+<!-- NAVBAR COMPONENT -->
+<div id="navbar"></div>
 
 
+<!-- HERO -->
 <section class="hero-premium"
 style="background-image:url('../images/hero-contacto.jpg')">
 
@@ -36,62 +35,101 @@ style="background-image:url('../images/hero-contacto.jpg')">
 
 <div class="container-premium relative z-10 text-center">
 
-<h1 class="hero-title">
+<h1 class="hero-title animate-fade-in">
 Contacto
 </h1>
+
+<p class="hero-subtitle">
+Estamos para asesorarte en tus operaciones de comercio exterior
+</p>
 
 </div>
 
 </section>
 
 
+<!-- CONTENIDO ORIGINAL -->
 <section class="section-premium">
 
 <div class="container-premium grid md:grid-cols-2 gap-12">
 
-<form class="card-premium">
 
-<input class="w-full mb-4 p-3 border rounded"
-placeholder="Nombre">
+<!-- FORMULARIO -->
+<form class="card-premium space-y-4">
 
-<input class="w-full mb-4 p-3 border rounded"
-placeholder="Email">
+<input
+type="text"
+placeholder="Nombre"
+class="w-full p-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
 
-<textarea class="w-full mb-4 p-3 border rounded"
-placeholder="Mensaje"></textarea>
+<input
+type="email"
+placeholder="Email"
+class="w-full p-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500">
 
-<button class="btn-premium">
-Enviar
+<textarea
+placeholder="Mensaje"
+rows="5"
+class="w-full p-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+
+<button
+type="submit"
+class="btn-premium w-full text-center">
+
+Enviar mensaje
+
 </button>
 
 </form>
 
 
-<div>
+<!-- DATOS CONTACTO -->
+<div class="card-premium">
+
+<h3 class="card-title mb-4">
+Información de contacto
+</h3>
 
 <p class="mb-3">
-Paseo de los Arrieros 3068
+<i class="fas fa-map-marker-alt text-sky-500 mr-2"></i>
+Paseo de los Arrieros 3068, Río Gallegos
 </p>
 
-<p>
+<p class="mb-3">
+<i class="fas fa-phone text-sky-500 mr-2"></i>
 +54 9 2966 460200
 </p>
 
+<p class="mb-3">
+<i class="fas fa-envelope text-sky-500 mr-2"></i>
+ldriezler@estudioaduanerold.com.ar
+</p>
+
 </div>
+
 
 </div>
 
 </section>
 
 
-<footer class="footer-premium">
-<div class="footer-bottom">
-© 2026 Estudio Aduanero LD
-</div>
-</footer>
+<!-- FOOTER COMPONENT -->
+<div id="footer"></div>
 
 
+<!-- WhatsApp -->
+<a href="https://wa.me/5492966460200"
+class="whatsapp-btn"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<!-- JS -->
 <script src="../js/script.js"></script>
+
 
 </body>
 </html>

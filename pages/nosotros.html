@@ -12,52 +12,24 @@
 <meta property="og:title" content="Empresa | Estudio Aduanero LD">
 <meta property="og:image" content="../images/hero-nosotros.jpg">
 
+<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- Font Awesome -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- CSS -->
 <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
+
 <body class="bg-slate-50 text-slate-800">
 
 
-<!-- NAVBAR -->
-<header class="navbar-premium fixed top-0 w-full z-50">
-
-<div class="container-premium">
-
-<div class="flex justify-between items-center h-20">
-
-<a href="../index.html" class="flex items-center gap-3">
-
-<img src="../images/logo.png" class="h-10">
-
-<span class="text-xl font-semibold text-white">
-Estudio Aduanero LD
-</span>
-
-</a>
-
-<nav class="hidden md:flex gap-8 text-white font-medium">
-
-<a href="../index.html" class="nav-link">Inicio</a>
-<a href="servicios.html" class="nav-link">Servicios</a>
-<a href="nosotros.html" class="nav-link">Empresa</a>
-<a href="proyectos.html" class="nav-link">Proyectos</a>
-<a href="contacto.html" class="nav-link">Contacto</a>
-
-</nav>
-
-<button id="menu-btn" class="md:hidden text-white text-2xl">
-<i class="fas fa-bars"></i>
-</button>
-
-</div>
-</div>
-</header>
+<!-- NAVBAR COMPONENT -->
+<div id="navbar"></div>
 
 
 <!-- HERO -->
@@ -68,7 +40,7 @@ style="background-image:url('../images/hero-nosotros.jpg')">
 
 <div class="container-premium relative z-10 text-center">
 
-<h1 class="hero-title">
+<h1 class="hero-title animate-fade-in">
 Nuestra Empresa
 </h1>
 
@@ -115,6 +87,7 @@ class="rounded-xl shadow-xl">
 
 <div class="container-premium grid md:grid-cols-3 gap-8">
 
+<!-- MISION -->
 <div class="card-premium">
 
 <i class="fas fa-bullseye card-icon"></i>
@@ -130,6 +103,7 @@ Brindar servicios profesionales en comercio exterior con máxima eficiencia y cu
 </div>
 
 
+<!-- VISION -->
 <div class="card-premium">
 
 <i class="fas fa-eye card-icon"></i>
@@ -145,6 +119,7 @@ Ser un referente regional en servicios aduaneros y logísticos.
 </div>
 
 
+<!-- VALORES -->
 <div class="card-premium">
 
 <i class="fas fa-handshake card-icon"></i>
@@ -164,66 +139,11 @@ Valores
 </section>
 
 
-<!-- FOOTER -->
-<footer class="footer-premium">
-
-<div class="container-premium grid md:grid-cols-3 gap-8">
-
-<div>
-
-<div class="flex items-center gap-3 mb-4">
-
-<img src="../images/logo.png" class="h-8">
-
-<span class="font-semibold">
-Estudio Aduanero LD
-</span>
-
-</div>
-
-<p>Despachante de Aduana</p>
-<p>Agente de Transporte Aduanero</p>
-<p>Agente Marítimo</p>
-
-</div>
+<!-- FOOTER COMPONENT -->
+<div id="footer"></div>
 
 
-<div>
-
-<h4 class="footer-title">Contacto</h4>
-
-<p>Paseo de los Arrieros 3068</p>
-<p>+54 9 2966 460200</p>
-<p>ldriezler@estudioaduanerold.com.ar</p>
-
-</div>
-
-
-<div>
-
-<h4 class="footer-title">Enlaces</h4>
-
-<div class="flex flex-col gap-2">
-
-<a href="../index.html">Inicio</a>
-<a href="servicios.html">Servicios</a>
-<a href="nosotros.html">Empresa</a>
-<a href="proyectos.html">Proyectos</a>
-<a href="contacto.html">Contacto</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="footer-bottom">
-© 2026 Estudio Aduanero LD
-</div>
-
-</footer>
-
-
+<!-- WhatsApp -->
 <a href="https://wa.me/5492966460200"
 class="whatsapp-btn"
 target="_blank">
@@ -233,7 +153,9 @@ target="_blank">
 </a>
 
 
+<!-- JS -->
 <script src="../js/script.js"></script>
+
 
 </body>
 </html>
