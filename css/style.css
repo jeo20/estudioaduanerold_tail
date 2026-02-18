@@ -1,344 +1,203 @@
-/* ===============================
-   VARIABLES CORPORATIVAS
-=============================== */
+/* CONTAINER */
 
-:root {
-
-    --color-primary: #0f172a;
-    --color-secondary: #1e293b;
-    --color-accent: #0ea5e9;
-    --color-accent-hover: #0284c7;
-
-    --color-text: #1e293b;
-    --color-light: #f8fafc;
-
+.container-premium{
+max-width:1200px;
+margin:auto;
+padding-left:20px;
+padding-right:20px;
 }
 
+/* NAVBAR */
 
-/* ===============================
-   BASE
-=============================== */
-
-html {
-
-    scroll-behavior: smooth;
-
+.navbar-premium{
+position:fixed;
+width:100%;
+z-index:999;
+transition:all .3s ease;
 }
 
-body {
-
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-
+.navbar-scrolled{
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(10px);
 }
 
+/* HERO */
 
-/* ===============================
-   CONTENEDOR
-=============================== */
-
-.container-premium {
-
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-
+.hero-premium{
+height:100vh;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
 }
 
-
-/* ===============================
-   NAVBAR
-=============================== */
-
-.navbar-premium {
-
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-
+.hero-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(2,6,23,.6);
 }
 
-.navbar-premium.scrolled {
-
-    background: rgba(15, 23, 42, 1);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-
+.hero-title{
+font-size:48px;
+font-weight:bold;
+color:white;
 }
 
-.nav-link {
-
-    position: relative;
-    transition: 0.3s;
-
+.hero-subtitle{
+font-size:20px;
+color:white;
+margin-top:10px;
 }
 
-.nav-link:hover {
+/* BUTTON */
 
-    color: var(--color-accent);
-
+.btn-premium{
+background:#0ea5e9;
+color:white;
+padding:12px 24px;
+border-radius:8px;
+transition:.3s;
 }
 
-.nav-link::after {
-
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-
-    width: 0;
-    height: 2px;
-
-    background: var(--color-accent);
-
-    transition: 0.3s;
-
+.btn-premium:hover{
+background:#0284c7;
 }
 
-.nav-link:hover::after {
+/* SECTION */
 
-    width: 100%;
-
+.section-premium{
+padding:80px 0;
 }
 
-
-/* ===============================
-   HERO
-=============================== */
-
-.hero-premium {
-
-    height: 100vh;
-
-    background-image: url("../images/hero-home.jpg");
-
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: white;
-
-    position: relative;
-
+.section-alt{
+padding:80px 0;
+background:#f1f5f9;
 }
 
-.hero-overlay {
-
-    position: absolute;
-    inset: 0;
-
-    background: linear-gradient(
-        rgba(15,23,42,0.85),
-        rgba(15,23,42,0.6)
-    );
-
+.section-title{
+font-size:32px;
+font-weight:bold;
+margin-bottom:40px;
+text-align:center;
 }
 
-.hero-title {
+/* CARD */
 
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-
+.card-premium{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+opacity:0;
+transform:translateY(30px);
+transition:.6s;
 }
 
-.hero-subtitle {
-
-    font-size: 20px;
-    opacity: 0.9;
-
+.card-premium.animate-show{
+opacity:1;
+transform:translateY(0);
 }
 
-
-/* ===============================
-   BOTONES
-=============================== */
-
-.btn-premium {
-
-    background: var(--color-accent);
-    color: white;
-
-    padding: 14px 28px;
-
-    border-radius: 8px;
-
-    display: inline-block;
-
-    transition: 0.3s;
-
+.card-icon{
+font-size:32px;
+color:#0ea5e9;
+margin-bottom:15px;
 }
 
-.btn-premium:hover {
-
-    background: var(--color-accent-hover);
-    transform: translateY(-2px);
-
+.card-title{
+font-size:20px;
+font-weight:bold;
+margin-bottom:10px;
 }
 
+/* FOOTER */
 
-/* ===============================
-   SECCIONES
-=============================== */
-
-.section-premium {
-
-    padding: 100px 0;
-
+.footer-premium{
+background:#0f172a;
+color:white;
+padding:60px 0;
 }
 
-.section-alt {
-
-    padding: 100px 0;
-    background: #f1f5f9;
-
+.footer-bottom{
+text-align:center;
+margin-top:20px;
+opacity:.7;
 }
 
-.section-title {
+/* WHATSAPP */
 
-    font-size: 32px;
-    font-weight: 700;
-
-    text-align: center;
-
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:30px;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
+/* CLIENT LOGO */
 
-/* ===============================
-   CARDS
-=============================== */
-
-.card-premium {
-
-    background: white;
-
-    padding: 30px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-
-    transition: 0.3s;
-
+.client-logo{
+max-height:60px;
+margin:auto;
+filter:grayscale(100%);
+transition:.3s;
 }
 
-.card-premium:hover {
-
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-
+.client-logo:hover{
+filter:grayscale(0%);
+transform:scale(1.1);
 }
 
-.card-icon {
+/* LOADER */
 
-    font-size: 40px;
-    color: var(--color-accent);
-    margin-bottom: 15px;
-
+#loader{
+position:fixed;
+width:100%;
+height:100%;
+background:white;
+z-index:9999;
 }
 
-.card-title {
+/* ANIMATIONS */
 
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-
+.animate-fade-in{
+animation:fadeIn 1s ease forwards;
 }
 
-
-/* ===============================
-   FOOTER
-=============================== */
-
-.footer-premium {
-
-    background: var(--color-primary);
-    color: white;
-
-    padding: 60px 0 20px;
-
+.animate-fade-in-delay{
+animation:fadeIn 1s ease .3s forwards;
+opacity:0;
 }
 
-.footer-title {
-
-    font-weight: 600;
-    margin-bottom: 10px;
-
+.animate-fade-in-delay-2{
+animation:fadeIn 1s ease .6s forwards;
+opacity:0;
 }
 
-.footer-bottom {
-
-    margin-top: 40px;
-    text-align: center;
-    opacity: 0.7;
-
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
 }
 
-
-/* ===============================
-   WHATSAPP
-=============================== */
-
-.whatsapp-btn {
-
-    position: fixed;
-
-    bottom: 25px;
-    right: 25px;
-
-    background: #25d366;
-
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: white;
-    font-size: 28px;
-
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-
-    transition: 0.3s;
-
+.nav-link{
+color:white;
+opacity:.9;
+transition:.3s;
 }
 
-.whatsapp-btn:hover {
-
-    transform: scale(1.1);
-
-}
-
-
-/* ===============================
-   ANIMACIONES
-=============================== */
-
-.animate-fade-in {
-
-    animation: fadeInUp 1s ease forwards;
-
-}
-
-@keyframes fadeInUp {
-
-    from {
-
-        opacity: 0;
-        transform: translateY(30px);
-
-    }
-
-    to {
-
-        opacity: 1;
-        transform: translateY(0);
-
-    }
-
+.nav-link:hover{
+opacity:1;
+color:#38bdf8;
 }

@@ -1,118 +1,85 @@
-/* ===============================
-   ESTUDIO ADUANERO LD
-   Script principal
-================================ */
+/* LOADER */
 
+window.addEventListener("load", () => {
 
-/* ===============================
-   LOAD COMPONENTS
-================================ */
+const loader = document.getElementById("loader");
 
-async function loadComponent(id, file)
-{
-    try
-    {
-        const response = await fetch(file);
+if(loader)
+loader.style.display = "none";
 
-        if (!response.ok)
-        {
-            throw new Error(`Error cargando ${file}`);
-        }
-
-        const html = await response.text();
-
-        document.getElementById(id).innerHTML = html;
-    }
-    catch (error)
-    {
-        console.error(error);
-    }
-}
-
-
-
-/* ===============================
-   LOAD NAVBAR + FOOTER
-================================ */
-
-document.addEventListener("DOMContentLoaded", async () =>
-{
-    await loadComponent("navbar", "/components/navbar.html");
-    await loadComponent("footer", "/components/footer.html");
-
-    initMobileMenu();
-    initNavbarScroll();
 });
 
 
+/* NAVBAR SCROLL */
 
-/* ===============================
-   MOBILE MENU
-================================ */
+window.addEventListener("scroll", () => {
 
-function initMobileMenu()
-{
-    const btn = document.getElementById("menu-btn");
+const navbar = document.querySelector(".navbar-premium");
 
-    if (!btn) return;
+if(!navbar) return;
 
-    btn.addEventListener("click", () =>
-    {
-        const menu = document.getElementById("mobile-menu");
+if(window.scrollY > 50)
+navbar.classList.add("navbar-scrolled");
+else
+navbar.classList.remove("navbar-scrolled");
 
-        if (!menu) return;
+});
 
-        menu.classList.toggle("hidden");
-    });
+
+/* LOAD COMPONENTS */
+
+async function loadComponent(id, file){
+
+const el = document.getElementById(id);
+
+if(!el) return;
+
+try{
+
+const res = await fetch(file);
+const html = await res.text();
+el.innerHTML = html;
+
+}catch(e){
+
+console.error("Error loading component:", file);
+
+}
+
 }
 
 
+loadComponent("navbar", "/components/navbar.html");
+loadComponent("footer", "/components/footer.html");
 
-/* ===============================
-   NAVBAR SCROLL EFFECT
-================================ */
 
-function initNavbarScroll()
-{
-    const navbar = document.querySelector(".navbar-premium");
+/* ANIMATION ON SCROLL */
 
-    if (!navbar) return;
+const observer = new IntersectionObserver(entries => {
 
-    window.addEventListener("scroll", () =>
-    {
-        if (window.scrollY > 50)
-        {
-            navbar.classList.add("navbar-scrolled");
-        }
-        else
-        {
-            navbar.classList.remove("navbar-scrolled");
-        }
-    });
+entries.forEach(entry => {
+
+if(entry.isIntersecting)
+entry.target.classList.add("animate-show");
+
+});
+
+});
+
+document.querySelectorAll(".card-premium").forEach(el => {
+
+observer.observe(el);
+
+});
+
+document.addEventListener("click", function(e){
+
+if(e.target.closest("#menu-btn")){
+
+const menu = document.getElementById("mobile-menu");
+
+menu.classList.toggle("hidden");
+
 }
 
-
-
-/* ===============================
-   FADE IN ANIMATION ON SCROLL
-================================ */
-
-const observer = new IntersectionObserver((entries) =>
-{
-    entries.forEach(entry =>
-    {
-        if (entry.isIntersecting)
-        {
-            entry.target.classList.add("animate-fade-in");
-        }
-    });
-
-}, { threshold: 0.1 });
-
-
-
-document.querySelectorAll(".card-premium, .section-title")
-.forEach(el =>
-{
-    observer.observe(el);
 });
